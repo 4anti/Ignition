@@ -26,8 +26,8 @@
     <style>
       .word-static { opacity: 0; }
       .matrix-rain > g { opacity: 1 !important; }
-      .letters text, .cursor {
-        animation-duration: 9s;
+      .letters text {
+        animation-duration: 6.4s;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
       }
@@ -59,48 +59,48 @@
         54% { opacity: .96; }
       }
       @keyframes letter0 {
-        0%, 0.000% { opacity: 0; }
-        4.444%, 61.778% { opacity: 1; }
-        66.222%, 100% { opacity: 0; }
+        0% { opacity: 0; }
+        3.438%, 66.562% { opacity: 1; }
+        70%, 100% { opacity: 0; }
       }
       @keyframes letter1 {
-        0%, 4.222% { opacity: 0; }
-        8.667%, 66.000% { opacity: 1; }
-        70.444%, 100% { opacity: 0; }
+        0%, 3.438% { opacity: 0; }
+        6.875%, 70% { opacity: 1; }
+        73.438%, 100% { opacity: 0; }
       }
       @keyframes letter2 {
-        0%, 8.444% { opacity: 0; }
-        12.889%, 70.222% { opacity: 1; }
-        74.667%, 100% { opacity: 0; }
+        0%, 6.875% { opacity: 0; }
+        10.312%, 73.438% { opacity: 1; }
+        76.875%, 100% { opacity: 0; }
       }
       @keyframes letter3 {
-        0%, 12.667% { opacity: 0; }
-        17.111%, 74.444% { opacity: 1; }
-        78.889%, 100% { opacity: 0; }
+        0%, 10.312% { opacity: 0; }
+        13.75%, 76.875% { opacity: 1; }
+        80.312%, 100% { opacity: 0; }
       }
       @keyframes letter4 {
-        0%, 16.889% { opacity: 0; }
-        21.333%, 78.667% { opacity: 1; }
-        83.111%, 100% { opacity: 0; }
+        0%, 13.75% { opacity: 0; }
+        17.188%, 80.312% { opacity: 1; }
+        83.75%, 100% { opacity: 0; }
       }
       @keyframes letter5 {
-        0%, 21.111% { opacity: 0; }
-        25.556%, 82.889% { opacity: 1; }
-        87.333%, 100% { opacity: 0; }
+        0%, 17.188% { opacity: 0; }
+        20.625%, 83.75% { opacity: 1; }
+        87.188%, 100% { opacity: 0; }
       }
       @keyframes letter6 {
-        0%, 25.333% { opacity: 0; }
-        29.778%, 87.111% { opacity: 1; }
-        91.556%, 100% { opacity: 0; }
+        0%, 20.625% { opacity: 0; }
+        24.062%, 87.188% { opacity: 1; }
+        90.625%, 100% { opacity: 0; }
       }
       @keyframes letter7 {
-        0%, 29.556% { opacity: 0; }
-        34.000%, 91.333% { opacity: 1; }
-        95.778%, 100% { opacity: 0; }
+        0%, 24.062% { opacity: 0; }
+        27.5%, 90.625% { opacity: 1; }
+        94.062%, 100% { opacity: 0; }
       }
       @media (prefers-reduced-motion: reduce) {
         .word-static { opacity: 1; }
-        .letters, .cursor, .matrix-rain, #ember-glow { display: none; }
+        .letters, .matrix-rain, #ember-glow { display: none; }
         .hatch, .bar, .flame { animation: none !important; }
       }
     </style>
@@ -154,7 +154,6 @@
   <text x="140" y="92" fill="#9d9888" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" letter-spacing="6.4">STARTUP PICKER</text>
   <text class="word-static" x="140" y="156" fill="#f4f0e4" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="72" font-weight="700" letter-spacing="-2.2">Ignition</text>
   <g class="letters" aria-hidden="true"><text x="140.0" y="156" fill="#f4f0e4" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="72" font-weight="700" opacity="0" style="animation-name:letter0;">I</text><text x="160.6" y="156" fill="#f4f0e4" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="72" font-weight="700" opacity="0" style="animation-name:letter1;">g</text><text x="203.0" y="156" fill="#f4f0e4" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="72" font-weight="700" opacity="0" style="animation-name:letter2;">n</text><text x="244.3" y="156" fill="#f4f0e4" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="72" font-weight="700" opacity="0" style="animation-name:letter3;">i</text><text x="262.6" y="156" fill="#f4f0e4" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="72" font-weight="700" opacity="0" style="animation-name:letter4;">t</text><text x="288.4" y="156" fill="#f4f0e4" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="72" font-weight="700" opacity="0" style="animation-name:letter5;">i</text><text x="306.7" y="156" fill="#f4f0e4" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="72" font-weight="700" opacity="0" style="animation-name:letter6;">o</text><text x="348.5" y="156" fill="#f4f0e4" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="72" font-weight="700" opacity="0" style="animation-name:letter7;">n</text></g>
-  <rect class="cursor" x="398.0" y="128" width="10" height="28" fill="#e0923f" opacity="0" style="animation-name:letter7;"/>
   <text x="144" y="196" fill="#a39e8c" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16">Opens the list at login. Then it quits.</text>
   <rect class="bar" x="140" y="214" width="72" height="3" fill="url(#copper)" style="transform-origin:140px 215.5px;animation:bar 3.2s ease-in-out infinite;"/>
 </svg>
