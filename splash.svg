@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 280" role="img" aria-label="Ignition login splash">
+  <title>Ignition splash</title>
+  <rect width="760" height="280" rx="10" fill="#12140f"/>
+  <rect x="180" y="48" width="400" height="184" rx="12" fill="#22251c" stroke="#3e4136"/>
+  <text x="208" y="90" fill="#9d9888" font-family="Segoe UI, Arial, sans-serif" font-size="11" letter-spacing="2">IGNITION</text>
+  <text x="208" y="116" fill="#f4f0e4" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Arming</text>
+  <text x="520" y="110" fill="#f6c27a" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">03</text>
+  <rect x="208" y="140" width="344" height="3" fill="#3e4136"/>
+  <rect x="208" y="140" width="210" height="3" fill="#e0923f"/>
+  <text x="208" y="172" fill="#9d9888" font-family="Segoe UI, Arial, sans-serif" font-size="12">Opening selected items</text>
+</svg>

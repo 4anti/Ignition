@@ -6,8 +6,6 @@
 
 ![Version](https://img.shields.io/badge/version-v0.1.0-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-Windows-white.svg)
-![Tauri](https://img.shields.io/badge/Tauri-2-24C8DB.svg?logo=tauri&logoColor=white)
-![Rust](https://img.shields.io/badge/Rust-1.77+-dea584.svg?logo=rust&logoColor=white)
 [![License](https://img.shields.io/badge/license-PolyForm%20Noncommercial-lightgrey.svg)](LICENSE)
 
 </div>
@@ -20,7 +18,7 @@
 <br>
 
 <div align="center">
-  <img src="docs/screenshots/picker.svg" alt="Ignition main window" width="800">
+  <img src="picker.svg" alt="Ignition main window" width="800">
 </div>
 
 ---
@@ -50,12 +48,12 @@
     <table>
       <tr>
         <td valign="top" width="50%">
-          <img src="docs/screenshots/list.svg" alt="Queued startup items" width="450"><br>
+          <img src="list.svg" alt="Queued startup items" width="450"><br>
           <b>Per-item control</b><br>
           <i>Enable, delay, open, or remove anything in the list. File icons come from Windows.</i>
         </td>
         <td valign="top" width="50%">
-          <img src="docs/screenshots/splash.svg" alt="Login splash" width="450"><br>
+          <img src="splash.svg" alt="Login splash" width="450"><br>
           <b>Login splash</b><br>
           <i>At boot it shows a small overlay, launches the enabled items, then quits.</i>
         </td>
@@ -63,8 +61,6 @@
     </table>
   </div>
 </details>
-
-> Screenshots above are placeholders. Drop real captures into `docs/screenshots/` as `picker.png`, `list.png`, and `splash.png`, then point the README at those files. See [`docs/screenshots/README.md`](docs/screenshots/README.md).
 
 ---
 
@@ -112,6 +108,13 @@
 2. Download the latest `Ignition_x.y.z_x64-setup.exe`.
 3. Run the installer (current user, no admin).
 4. Add your list, turn on **Run at login**.
+
+Releases are built on GitHub Actions when a `v*` tag is pushed:
+
+```bash
+git tag v0.1.0
+git push origin v0.1.0
+```
 
 Until a release is published, build from source below.
 

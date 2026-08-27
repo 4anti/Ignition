@@ -1,0 +1,82 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Sync version from tag
+        shell: node {0}
+        env:
+          TAG: ${{ github.ref_name }}
+        run: |
+          const fs = require("fs");
+          const ver = process.env.TAG.replace(/^v/, "");
+          const bump = (path, find, replace) => {
+            const next = fs.readFileSync(path, "utf8").replace(find, replace);
+            fs.writeFileSync(path, next);
+          };
+          bump("package.json", /"version":\s*"[^"]+"/, `"version": "${ver}"`);
+          bump("src-tauri/tauri.conf.json", /"version":\s*"[^"]+"/, `"version": "${ver}"`);
+          bump("src-tauri/Cargo.toml", /^version = "[^"]+"/m, `version = "${ver}"`);
+          bump("README.md", /version-v[0-9.]+/, `version-v${ver}`);
+          console.log(`Synced version to ${ver}`);
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache Rust
+        uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: src-tauri -> target
+
+      - name: Install frontend deps
+        run: npm ci
+
+      - name: Release notes
+        id: notes
+        shell: bash
+        run: |
+          VER="${GITHUB_REF_NAME#v}"
+          BODY=$(awk -v ver="$VER" '
+            $0 ~ "^## " ver "$" {found=1; next}
+            found && /^## / {exit}
+            found {print}
+          ' CHANGELOG.md)
+          if [ -z "$BODY" ]; then
+            BODY="Windows installer for Ignition ${GITHUB_REF_NAME}."
+          fi
+          {
+            echo "body<<EOF"
+            printf '%s\n' "$BODY"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Build installer and publish
+        uses: tauri-apps/tauri-action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tagName: ${{ github.ref_name }}
+          releaseName: Ignition ${{ github.ref_name }}
+          releaseBody: ${{ steps.notes.outputs.body }}
+          releaseDraft: false
+          prerelease: false
+          uploadUpdaterJson: false
+          args: --bundles nsis

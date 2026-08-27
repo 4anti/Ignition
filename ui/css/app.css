@@ -90,14 +90,6 @@ button {
   user-select: none;
 }
 
-.mark {
-  width: 10px;
-  height: 26px;
-  flex-shrink: 0;
-  background: linear-gradient(180deg, var(--accent-2), var(--accent));
-  clip-path: polygon(0 7px, 50% 0, 100% 7px, 100% 100%, 0 100%);
-}
-
 .kicker {
   font-family: Syne, sans-serif;
   font-size: 10px;
@@ -558,6 +550,7 @@ h1 {
 }
 
 .dropzone {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -568,14 +561,6 @@ h1 {
   border: 1px dashed rgba(224, 146, 63, 0.38);
   border-radius: 12px;
   background: rgba(34, 37, 28, 0.55);
-}
-
-.dropzone-mark {
-  width: 14px;
-  height: 34px;
-  margin-bottom: 8px;
-  background: linear-gradient(180deg, var(--accent-2), var(--accent));
-  clip-path: polygon(0 7px, 50% 0, 100% 7px, 100% 100%, 0 100%);
 }
 
 .dropzone h2 {
@@ -593,6 +578,10 @@ h1 {
 }
 
 .empty-actions {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  bottom: 28px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -652,7 +641,7 @@ body.dragging .drop-veil {
 
 .splash-top {
   display: grid;
-  grid-template-columns: 12px 1fr auto;
+  grid-template-columns: 1fr auto;
   gap: 12px;
   align-items: center;
 }
