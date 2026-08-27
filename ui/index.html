@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Ignition</title>
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body class="picker">
+    <div class="noise" aria-hidden="true"></div>
+    <div class="shell">
+      <header class="titlebar">
+        <div class="drag" data-tauri-drag-region>
+          <span class="mark" aria-hidden="true"></span>
+          <div class="brand">
+            <p class="kicker">Startup picker</p>
+            <h1>Ignition</h1>
+          </div>
+          <div class="meta">
+            <span class="serial" id="unit-count">0 items</span>
+            <span class="dot" aria-hidden="true"></span>
+            <span id="status-line">Ready</span>
+          </div>
+        </div>
+        <div class="win-btns">
+          <button type="button" id="min-btn" class="win-btn" aria-label="Minimize"></button>
+          <button type="button" id="max-btn" class="win-btn win-btn-max" aria-label="Maximize"></button>
+          <button type="button" id="close-btn" class="win-btn win-btn-close" aria-label="Close"></button>
+        </div>
+      </header>
+
+      <section class="controls">
+        <div class="controls-main">
+          <div class="adds">
+            <button type="button" class="btn" id="add-file">Add file</button>
+            <button type="button" class="btn" id="add-folder">Add folder</button>
+            <button type="button" class="btn" id="add-url">Add URL</button>
+          </div>
+          <button type="button" class="btn btn-copper" id="launch-now">Launch now</button>
+        </div>
+        <div class="controls-meta">
+          <label class="switch">
+            <input type="checkbox" id="autostart" />
+            <span class="switch-ui" aria-hidden="true"></span>
+            <span class="switch-copy">
+              <strong>Run at login</strong>
+              <small>Opens the list, then quits</small>
+            </span>
+          </label>
+          <div class="timing">
+            <label>After login <input id="login-delay" type="number" min="0" max="60" step="1" value="0" /> s</label>
+            <label>Gap <input id="stagger" type="number" min="0" max="5" step="0.05" value="0.35" /> s</label>
+          </div>
+        </div>
+      </section>
+
+      <form class="url-bar" id="url-form" hidden>
+        <label for="url-input">URL</label>
+        <input id="url-input" type="url" placeholder="https://" autocomplete="off" spellcheck="false" />
+        <button type="submit" class="btn btn-copper">Add</button>
+        <button type="button" class="btn" id="url-cancel">Cancel</button>
+      </form>
+
+      <main class="deck">
+        <div class="drop-veil" id="drop-veil">Drop to add</div>
+        <ul class="list" id="list"></ul>
+        <div class="empty" id="empty">
+          <div class="dropzone">
+            <span class="dropzone-mark" aria-hidden="true"></span>
+            <h2>Drop programs here</h2>
+            <p>Apps, files, folders, or links. At login they open, then Ignition quits.</p>
+            <div class="empty-actions">
+              <button type="button" class="btn" data-add="file">Add a file or app</button>
+              <button type="button" class="btn" data-add="folder">Add a folder</button>
+              <button type="button" class="btn btn-ghost" data-add="url">Paste a URL</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="js/picker.js"></script>
+  </body>
+</html>

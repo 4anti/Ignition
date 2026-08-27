@@ -1,0 +1,14 @@
+{
+  "name": "ignition",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pick programs, files, and URLs to open at login.",
+  "scripts": {
+    "dev": "tauri dev",
+    "build": "tauri build",
+    "tauri": "tauri"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2"
+  }
+}

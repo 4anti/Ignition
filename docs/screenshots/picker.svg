@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 580" role="img" aria-label="Ignition picker placeholder">
+  <title>Picker screenshot placeholder</title>
+  <rect width="960" height="580" rx="10" fill="#12140f"/>
+  <rect width="958" height="578" x="1" y="1" rx="9" fill="none" stroke="#3e4136"/>
+  <rect width="960" height="48" fill="#1a1c16"/>
+  <rect y="47" width="960" height="1" fill="#3e4136"/>
+  <path fill="#e0923f" d="M22 12 L32 8 L42 12 L42 36 L22 36 Z"/>
+  <text x="52" y="21" fill="#9d9888" font-family="Segoe UI, Arial, sans-serif" font-size="10" letter-spacing="2.4">STARTUP PICKER</text>
+  <text x="52" y="38" fill="#f4f0e4" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">Ignition</text>
+  <text x="200" y="30" fill="#f6c27a" font-family="Segoe UI, Arial, sans-serif" font-size="12">0 items</text>
+  <text x="258" y="30" fill="#9d9888" font-family="Segoe UI, Arial, sans-serif" font-size="12">Ready</text>
+  <g fill="#9d9888">
+    <rect x="820" y="22" width="12" height="2"/>
+    <rect x="860" y="18" width="10" height="10" fill="none" stroke="#9d9888"/>
+    <path d="M910 18 L920 30 M920 18 L910 30" stroke="#9d9888" fill="none"/>
+  </g>
+  <rect y="48" width="960" height="86" fill="#1a1c16"/>
+  <rect y="133" width="960" height="1" fill="#3e4136"/>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600">
+    <rect x="20" y="60" width="86" height="32" rx="8" fill="#2a2d22" stroke="#55584a"/>
+    <text x="36" y="81" fill="#f4f0e4">Add file</text>
+    <rect x="114" y="60" width="102" height="32" rx="8" fill="#2a2d22" stroke="#55584a"/>
+    <text x="128" y="81" fill="#f4f0e4">Add folder</text>
+    <rect x="224" y="60" width="88" height="32" rx="8" fill="#2a2d22" stroke="#55584a"/>
+    <text x="240" y="81" fill="#f4f0e4">Add URL</text>
+    <rect x="820" y="60" width="120" height="32" rx="8" fill="#e0923f"/>
+    <text x="844" y="81" fill="#1a140c">Launch now</text>
+  </g>
+  <text x="20" y="118" fill="#f4f0e4" font-family="Segoe UI, Arial, sans-serif" font-size="13">Run at login</text>
+  <text x="128" y="118" fill="#9d9888" font-family="Segoe UI, Arial, sans-serif" font-size="11">Opens the list, then quits</text>
+  <rect x="148" y="148" width="664" height="400" rx="12" fill="#22251c" stroke="#e0923f" stroke-dasharray="5 7" stroke-opacity=".38"/>
+  <path fill="#e0923f" d="M468 250 L492 238 L516 250 L516 292 L468 292 Z"/>
+  <text x="480" y="330" text-anchor="middle" fill="#f4f0e4" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Drop programs here</text>
+  <text x="480" y="358" text-anchor="middle" fill="#9d9888" font-family="Segoe UI, Arial, sans-serif" font-size="14">Replace this file with your picker screenshot.</text>
+  <text x="480" y="378" text-anchor="middle" fill="#6f6b5e" font-family="Segoe UI, Arial, sans-serif" font-size="12">docs/screenshots/picker.png</text>
+</svg>

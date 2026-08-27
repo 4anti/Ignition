@@ -1,0 +1,13 @@
+node_modules/
+src-tauri/target/
+src-tauri/gen/schemas/
+dist/
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+.idea/
+.vscode/
+*.pdb
+WixTools/

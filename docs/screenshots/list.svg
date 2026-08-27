@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-label="Ignition list placeholder">
+  <title>List screenshot placeholder</title>
+  <rect width="960" height="420" rx="10" fill="#12140f"/>
+  <rect width="958" height="418" x="1" y="1" rx="9" fill="none" stroke="#3e4136"/>
+  <text x="24" y="36" fill="#f6c27a" font-family="Segoe UI, Arial, sans-serif" font-size="12" letter-spacing="2">QUEUE</text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="20" y="56" width="920" height="72" rx="8" fill="#22251c" stroke="#3e4136"/>
+    <rect x="40" y="78" width="28" height="28" rx="4" fill="#e0923f"/>
+    <text x="84" y="88" fill="#f4f0e4" font-size="16" font-weight="700">Notepad</text>
+    <text x="84" y="108" fill="#9d9888" font-size="12">C:\Windows\System32\notepad.exe</text>
+    <text x="640" y="94" fill="#9d9888" font-size="12">Wait 0 s</text>
+    <text x="760" y="94" fill="#f6c27a" font-size="12">Open</text>
+    <rect x="20" y="140" width="920" height="72" rx="8" fill="#22251c" stroke="#3e4136"/>
+    <rect x="40" y="162" width="28" height="28" rx="4" fill="#d26648"/>
+    <text x="84" y="172" fill="#f4f0e4" font-size="16" font-weight="700">mml-book</text>
+    <text x="84" y="192" fill="#9d9888" font-size="12">Downloads\mml-book.pdf</text>
+    <text x="640" y="178" fill="#9d9888" font-size="12">Wait 2 s</text>
+    <text x="760" y="178" fill="#f6c27a" font-size="12">Open</text>
+    <rect x="20" y="224" width="920" height="72" rx="8" fill="#22251c" stroke="#3e4136"/>
+    <rect x="40" y="246" width="28" height="28" rx="4" fill="#f6c27a"/>
+    <text x="84" y="256" fill="#f4f0e4" font-size="16" font-weight="700">Downloads</text>
+    <text x="84" y="276" fill="#9d9888" font-size="12">C:\Users\you\Downloads</text>
+    <text x="640" y="262" fill="#9d9888" font-size="12">Wait 0 s</text>
+    <text x="760" y="262" fill="#f6c27a" font-size="12">Open</text>
+  </g>
+  <text x="480" y="360" text-anchor="middle" fill="#6f6b5e" font-family="Segoe UI, Arial, sans-serif" font-size="13">Replace with docs/screenshots/list.png</text>
+</svg>
